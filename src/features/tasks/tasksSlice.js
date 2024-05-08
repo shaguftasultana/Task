@@ -1,4 +1,3 @@
-// src/features/tasks/tasksSlice.js
 
 import { createSlice } from '@reduxjs/toolkit';
 
