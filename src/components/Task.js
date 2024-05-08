@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ListItem, ListItemText, Checkbox, IconButton, ListItemSecondaryAction } from '@mui/material';
-import Delete from '@mui/icons-material/Delete';
+import { AiOutlineDelete } from 'react-icons/ai'; // Importing delete icon from react-icons
 import { useDispatch } from 'react-redux';
 import { deleteTask, toggleTaskCompletion } from '../features/tasks/tasksSlice';
 
@@ -26,7 +26,7 @@ const Task = ({ task }) => {
       <ListItemText primary={task.title} />
       <ListItemSecondaryAction>
         <IconButton edge="end" aria-label="delete" onClick={handleDelete}>
-          <Delete />
+        <AiOutlineDelete /> {/* Using AiOutlineDelete from react-icons */}
         </IconButton>
       </ListItemSecondaryAction>
     </ListItem>
