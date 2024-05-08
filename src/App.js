@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Container, List, TextField, Button } from '@material-ui/core';
+import { Container, List, TextField, Button } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
 import { addTask, selectTasks } from './features/tasks/tasksSlice';
 import Task from './components/Task';

@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import { ListItem, ListItemText, Checkbox, IconButton, ListItemSecondaryAction } from '@material-ui/core';
-import { Delete } from '@material-ui/icons';
+import { ListItem, ListItemText, Checkbox, IconButton, ListItemSecondaryAction } from '@mui/material';
+import Delete from '@mui/icons-material/Delete';
 import { useDispatch } from 'react-redux';
 import { deleteTask, toggleTaskCompletion } from '../features/tasks/tasksSlice';
 
